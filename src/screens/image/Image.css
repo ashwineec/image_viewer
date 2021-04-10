@@ -1,0 +1,54 @@
+.post {
+    width: 450px;
+    height: auto;
+    margin: 20px;
+    padding-bottom: 0%;
+}
+.like {
+    padding: -1%;
+}
+.like-no {
+    color: black;
+    padding-left: 10px;
+}
+
+.comment-container {
+    display: flex;
+}
+
+.comment-ip {
+    width: 92%;
+}
+
+.comment-btn {
+    width: 8%;
+    margin-left: -45px;
+    margin-top: 12px;
+}
+.add-comment {
+    margin-bottom: 20px;
+}
+
+
+
+.all-comments {
+    margin-top: -33px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+    margin-left: -38px;
+}
+
+ 
+
+hr {
+ 
+    margin: 14px 0px;
+}
+
+.content {
+    padding: 13px;
+}

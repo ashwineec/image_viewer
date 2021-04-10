@@ -1,4 +1,13 @@
 /* style for the div conatining the grid  */
+
+.post-grid {
+    display: flex;
+    columns: 2 auto;
+    margin: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .flex-container{
     width: 100%;
     display: flex;

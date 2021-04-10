@@ -99,7 +99,7 @@ class Header extends Component {
                     {this.props.showProfileIcon ?   // checking if the showSearchBox is true,only then it is shown 
                         <span>
                             <IconButton id="profile-icon" onClick={event => this.profileButtonClicked(event)}>
-                                <img src={this.props.profile_picture} alt={profileImage} id="profile-picture" />
+                                <img src="https://www.mystudy.icu/wp-content/uploads/2019/12/365073.jpg" alt={profileImage} id="profile-picture" />
                             </IconButton>
                             <Menu id="profile-menu" anchorEl={this.state.anchorEl} open={this.state.menuIsOpen} onClose={this.profileButtonClicked}>
                                 <MenuList className={classes.menuList}>
