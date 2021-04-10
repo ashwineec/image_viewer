@@ -2,18 +2,12 @@ import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
  
 import Card from '@material-ui/core/Card';
-import CardHeader from '@material-ui/core/CardHeader';
+ 
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
-import Avatar from '@material-ui/core/Avatar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import Favorite from '@material-ui/icons/Favorite';
-import FavoriteIcon from '@material-ui/icons/FavoriteBorder';
  
-import TextField from '@material-ui/core/TextField';
-import './Image.css';
-import { Button } from '@material-ui/core';
+import './ShowImage.css';
+ 
 
 const styles = theme => ({
 
@@ -33,7 +27,7 @@ const styles = theme => ({
         border: 'black solid 2px',
     },
 });
-class Image extends Component {
+class ShowImage extends Component {
 
     constructor() {
         super();
@@ -114,21 +108,7 @@ class Image extends Component {
         const { classes } = this.props;
         return (
             <Card className="post">
-                <CardHeader
-                    avatar={
-                        <Avatar alt="user" src="https://www.mystudy.icu/wp-content/uploads/2019/12/365073.jpg" className={classes.avatar}>
-
-                        </Avatar>
-                    }
-
-                    title={this.state.postDetails.username}
-                    subheader={new Date(this.state.postDetails.timestamp).getDate() +
-                        "/" + (new Date(this.state.postDetails.timestamp).getMonth() + 1) +
-                        "/" + new Date(this.state.postDetails.timestamp).getFullYear() +
-                        " " + new Date(this.state.postDetails.timestamp).getHours() +
-                        ":" + new Date(this.state.postDetails.timestamp).getMinutes() +
-                        ":" + new Date(this.state.postDetails.timestamp).getSeconds()}
-                />
+                
 
                 <CardContent className="content">
                     <div className="post-img">
@@ -140,30 +120,8 @@ class Image extends Component {
                         />
 
                     </div>
-                    <hr />
-
-                    
-
-
-                    <IconButton aria-label="add to favorites" className="like" onClick={this.likeHandler}>
-                        {this.state.isLiked ? <Favorite style={{ color: "red" }} /> : <FavoriteIcon />}
-                        <Typography className="like-no">{this.state.likes} likes</Typography>
-                    </IconButton>
-
-                    <div  >
-                        <div >
-                            <List list={this.state.comments} user={this.state.postDetails.username} />
-                        </div>
-                        <div  >
-                            <div className="comment-ip">
-                                <TextField id="standard-basic" style={{ width: '84%' }} value={this.state.comment} label="Add a comment" onChange={this.inputCommentHandler} />
-                            </div>
-                            <div className="comment-btn">
-                                <Button variant="contained" color="primary" className="add-comment" onClick={this.addCommentHandler}>Add</Button>
-                            </div>
-                        </div>
-
-                    </div>
+                     
+                     
                 </CardContent>
 
             </Card>
@@ -172,12 +130,6 @@ class Image extends Component {
 
 }
 
-const List = ({ list, user }) => (
-    <ul>
-        {list.map((item) => (
-            <li key={item + "" + 1}><span style={{ fontWeight: "bold" }}>{user}:</span> {item}</li>
-        ))}
-    </ul>
-);
+ 
 
-export default withStyles(styles)(Image);
+export default withStyles(styles)(ShowImage);

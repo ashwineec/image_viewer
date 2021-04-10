@@ -6,7 +6,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { Link } from 'react-router-dom';
 import profileImage from "../../assets/upgrad.svg"
-import { MenuList } from '@material-ui/core';
+ 
 import { withStyles } from '@material-ui/core/styles';
 import { Redirect } from 'react-router-dom'
 
@@ -102,19 +102,28 @@ class Header extends Component {
                                 <img src="https://www.mystudy.icu/wp-content/uploads/2019/12/365073.jpg" alt={profileImage} id="profile-picture" />
                             </IconButton>
                             <Menu id="profile-menu" anchorEl={this.state.anchorEl} open={this.state.menuIsOpen} onClose={this.profileButtonClicked}>
-                                <MenuList className={classes.menuList}>
+                                 
                                     {this.props.showMyAccount === true ?
                                     <div>
                                         <Link to={"/profile"} className={classes.menuItems} underline="none" color={"default"}>
                                             <MenuItem className={classes.menuItems} onClick={this.onMyAccountClicked} disableGutters={false}>My account</MenuItem>
                                         </Link>
                                     
-                                    <div className="horizontal-line"> </div>
+                                        <div className="horizontal-line"> </div>
+                                         
                                     </div>
+                                    
                                     : ""
                                     }
-                                        <MenuItem className="menu-items" onClick={this.onLogOutClicked}>Logout</MenuItem>
-                                </MenuList>
+                                    <div>
+                                         
+                                      <Link to={"/home"} className={classes.menuItems} underline="none" color={"default"}>   
+                                    <MenuItem className="menu-items" onClick={this.onLogOutClicked}>Logout</MenuItem>
+                                    </Link>
+                                    <div className="horizontal-line"> </div>
+                                    </div>
+
+                                 
                             </Menu>
                         </span>
                         : ""

@@ -1,0 +1,257 @@
+.profile-page {
+    margin: 20px 150px;
+     
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.user-icon-circle {
+    width: 25%;
+}
+
+.profile-icon {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background-color:white ;
+}
+
+.info-divs {
+    width: 100%;
+}
+
+.info {
+    width: 75%;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.info-section {
+    margin: auto;
+    width: 100%;
+    display: flex;
+}
+
+.user-info-sec{
+    width: 100%;
+    float: left;
+}
+
+ul {
+    display: flex;
+    float: left;
+    width: 100%;
+    padding: 0px !important;
+}
+
+.li-info {
+    width: 33%;
+    margin-right: 45px;
+    list-style-type: none;
+}
+
+.insta-handle {
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.insta-handle-name {
+    float: left;
+    font-size: 24px; 
+    font-weight: 500;  
+}
+
+.full-name {
+    font-size: large;
+    font-weight: 400;
+    margin-top: 20px;
+    float: left;
+}
+.ful-name {
+    display: flex;
+}
+
+.edit-btn {
+    margin-top: -2px !IMPORTANT; ;
+}
+
+.edit-modal {
+    width: 160px;
+    height: auto;
+    margin-left: 50%;
+    margin-top: 20%;
+    padding: 1.5em;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+.displayNone {
+    display: none;
+}
+
+.displayBlock {
+    display: block;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-top: 35px;
+}
+
+.profile-summary {
+    margin: 50px 0 0 270px;
+}
+
+.profile-summary-1 {
+    margin: 80px 0 0 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 30%;  
+}
+
+.right {
+     width: 70%;  
+}
+
+.spacing {
+    margin-left: 70px;
+}
+
+.top-spacing {
+    margin-top: 20px;
+}
+
+.top {
+    top: 20%;
+}
+
+.bottom {
+    bottom: 80%;
+}
+
+.dispBlock {
+    display: block;
+}
+
+.dispNone {
+    display: none;
+}
+
+.red {
+    color: red;
+}
+
+.image-margins {
+    margin: 0 100px 0 100px
+}
+
+.image-modal {
+    top: 20px;
+    bottom: 20px;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+}
+
+.modal-left {
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin-left: 10;
+    margin-top: 10
+}
+
+.clicked-image {
+    margin-top: 10px;
+    height: 80%;
+    width: 95%;
+}
+
+.modal-right {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.right-top {
+    height: 15%;
+    margin-left: 10px;
+}
+
+.right-middle {
+    margin-top: 10px;
+    height: 50%;
+    margin-left: 10px;
+}
+
+.right-botton {
+    height: 10%;
+    margin-left: 10px;
+}
+
+.modal-profile-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.modal-username {
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute; 
+}
+
+.image-hashtags {
+    color: rgb(122,188,255);
+}
+
+.image-liked-icon{
+    color:red; 
+}
+
+.image-like-icon{
+    color: black;
+}
+
+.comments-block {
+    margin-top: 15px;
+}
+
+.comment-display{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.comment-text{
+    padding-left:10px;
+    width:100%;
+}
+
+.comment-username{
+    font-size: inherit;
+}
+
+@media (max-width: 992px) {
+    .flex-container {
+        flex-direction: row;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 90%;
+    }
+    .image-grid-item {
+        margin: 8px;
+    }
+}
